@@ -1,18 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Ejercicio 1. Selectores básicos y pseudoclases</title>
-    <link rel="stylesheet" href="Ejercicio1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iker Valls</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: linear-gradient(-45deg, #1abc9c, #3498db, #9b59b6, #e74c3c);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1.5em 0;
+    }
+
+    main {
+      padding: 2em;
+      background-color: rgba(0, 0, 0, 0.3);
+      margin: 2em auto;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    h1, h2 {
+      margin-bottom: 0.5em;
+    }
+
+    ol {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin: 0.5em 0;
+    }
+
+    .botones a {
+      display: block; /* siguen uno debajo del otro */
+      margin: 20px auto; /* más separación vertical */
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      color: white;
+      max-width: 300px;
+    }
+
+    .curriculum {
+      background-color: #2ecc71;
+    }
+
+    .curriculum:hover {
+      background-color: #27ae60;
+    }
+
+    .repositorio {
+      background-color: #34495e;
+    }
+
+    .repositorio:hover {
+      background-color: #2c3e50;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Título Principal</h1>
-    </header>
-    <main>
-        <p>Este es el primer párrafo del documento.</p>
-        <p class="destacado">Este es el segundo párrafo, y es el más importante.</p>
-        <p>Este es el tercer y último párrafo.</p>
-    </main>
+  <header>
+    <h1>Iker Valls</h1>
+    <p>Estudiante del primer curso del Grado Superior de Desarrollo de Aplicaciones Web</p>
+  </header>
+  <main>
+    <h2>Aquí compartiré mis proyectos, prácticas y avances en el mundo del desarrollo web.</h2>
+    <section>
+      <h2>Actualmente estoy aprendiendo:</h2>
+      <ol>
+        <li>Java como lenguaje de programación</li>
+        <li>HTML y CSS para crear y diseñar páginas web</li>
+        <li>Tecnologías XML: XML, XSD, DTD, XPath y XSLT</li>
+        <li>GitHub para control de versiones</li>
+        <li>Sistemas operativos: Windows y Linux en entorno cliente</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Contacto</h2>
+      <p>
+        <a href="https://www.linkedin.com/in/íker-valls-jiménez-3789082aa" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin" alt="LinkedIn">
+        </a>
+      </p>
+      <div class="botones">
+        <a href="https://www.canva.com/design/DAG3WgwpQng/kVD6WY726-coFmqcySIICw/edit?utm_content=DAG3WgwpQng&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+           target="_blank" class="curriculum">
+          📄 Ver mi currículum
+        </a>
+        <a href="https://github.com/ikervallss35?tab=repositories" 
+           target="_blank" class="repositorio">
+          💻 Ver mis repositorios de GitHub
+        </a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
+
